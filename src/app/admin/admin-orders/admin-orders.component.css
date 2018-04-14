@@ -1,0 +1,13 @@
+.card-space {
+    margin-bottom: 20px;
+}
+
+p {
+  padding: 0;
+  margin: 4px;
+  font-weight: 600;
+}
+
+.detail {
+    margin-bottom: 0;
+}

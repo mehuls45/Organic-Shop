@@ -1,0 +1,25 @@
+<div class="card-space">
+    <h2>Your Orders</h2>
+</div>
+
+<div *ngFor="let order of orders$ | async" class="card card-space">
+    <div class="card-body">
+        <div class="float-right">
+            {{ order.datePlaced | date }}
+        </div>
+      <div class="detail">
+          <p>Name: {{ order.shipping.name }} </p>
+      </div>
+      <div class="detail">
+          <p>Address: {{ order.shipping.addressLine1 }}, {{ order.shipping.addressLine2 }}</p>
+      </div>
+      <div class="detail">
+          <p>City: {{ order.shipping.city }}</p>
+      </div>
+      <br>
+      <a href="#" class="btn btn-primary">Order Completed</a>
+    </div>
+</div>
+
+
+
